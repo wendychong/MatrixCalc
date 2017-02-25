@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/MyFiles">
+        <file>pikachu.jpg</file>
+        <file>angry_pikachu.jpg</file>
+    </qresource>
+</RCC>
