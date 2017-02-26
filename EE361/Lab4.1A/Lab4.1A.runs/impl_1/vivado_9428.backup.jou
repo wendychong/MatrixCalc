@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Feb 25 07:40:40 2017
+# Process ID: 9428
+# Current directory: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1
+# Command line: vivado.exe -log test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test.tcl -notrace
+# Log file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.vdi
+# Journal file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace

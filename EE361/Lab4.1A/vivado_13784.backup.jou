@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Feb 25 07:24:25 2017
+# Process ID: 13784
+# Current directory: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13672 C:\Users\Cindy Chong\Desktop\EE361\Lab4.1A\Lab4.1A.xpr
+# Log file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/vivado.log
+# Journal file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.xpr}
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1
+file mkdir {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new}
+close [ open {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc}}
+remove_files  -fileset constrs_1 {{C:/Users/Cindy Chong/Desktop/EE361/Desktop/Basys3_Master.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+startgroup
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+set_property target_constrs_file {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+connect_debug_port dbg_hub/clk [get_nets <clock_net_name>]
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

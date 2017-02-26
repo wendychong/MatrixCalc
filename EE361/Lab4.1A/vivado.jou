@@ -1,0 +1,197 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Feb 25 07:44:25 2017
+# Process ID: 11580
+# Current directory: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12532 C:\Users\Cindy Chong\Desktop\EE361\Lab4.1A\Lab4.1A.xpr
+# Log file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/vivado.log
+# Journal file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.xpr}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ IO.*.* } ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { ROUTE_STATUS == "NONET" } ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { FLAT_PIN_COUNT > 0 } ]
+create_project test_hw {C:/Users/Cindy Chong/Desktop/EE361/test_hw} -part xc7a35tcpg236-1
+add_files -fileset constrs_1 -norecurse {{C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc}}
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+file mkdir {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new}
+close [ open {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v} w ]
+add_files {{C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v}}
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+startgroup
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+file mkdir {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new}
+close [ open {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc}}
+set_property target_constrs_file {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+werite_debug_probes probes.ltx
+write_debug_probes probes.ltx
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+reset_property USER_CHAIN_COUNT [get_hw_devices xc7a35t_0]
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_project
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+startgroup
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+save_constraints
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+write_de
+write_debug_probes probe.ltx
+set_property PROBES.FILE probes.ltx [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Cindy Chong/Desktop/probes.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+write_debug_probes test.ltx
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "SIGNAL" } ]
+write_debug_probes filename.tlx
+write_debug_probes filename.ltx
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bin} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

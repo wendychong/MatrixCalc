@@ -1,0 +1,489 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Feb 25 07:44:25 2017
+# Process ID: 11580
+# Current directory: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12532 C:\Users\Cindy Chong\Desktop\EE361\Lab4.1A\Lab4.1A.xpr
+# Log file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/vivado.log
+# Journal file: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v" into library work [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v:1]
+[Sat Feb 25 07:44:49 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched '<clk>'. [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc:10]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc:10]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1069.566 ; gain = 285.559
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v" into library work [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v:1]
+[Sat Feb 25 07:45:53 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk'. [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc:10]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc:10]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ IO.*.* } ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { ROUTE_STATUS == "NONET" } ]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hierarchical -top_net_of_hierarchical_group -filter { ROUTE_STATUS == "NONET" }'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { FLAT_PIN_COUNT > 0 } ]
+create_project test_hw {C:/Users/Cindy Chong/Desktop/EE361/test_hw} -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+add_files -fileset constrs_1 -norecurse {{C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc}}
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new
+can't create directory "C:/Users/Cindy": permission denied
+file mkdir {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new}
+close [ open {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v} w ]
+add_files {{C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v}}
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v" into library work [C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v:1]
+[Sat Feb 25 07:54:52 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+startgroup
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+file mkdir {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new}
+close [ open {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc}}
+set_property target_constrs_file {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Feb 25 07:56:17 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/synth_1/runme.log
+[Sat Feb 25 07:56:17 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+werite_debug_probes probes.ltx
+invalid command name "werite_debug_probes"
+write_debug_probes probes.ltx
+C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/probes.ltx
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_property USER_CHAIN_COUNT [get_hw_devices xc7a35t_0]
+ERROR: [Common 17-107] Cannot change read-only property 'USER_CHAIN_COUNT'.
+Resolution: Please refer to Vivado Properties Reference Guide (UG912) for more information on setting properties.
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v" into library work [C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/sources_1/new/test_hw.v:1]
+[Sat Feb 25 08:06:31 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/Basys3_Master.xdc]
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1989.824 ; gain = 0.000
+[Sat Feb 25 08:07:45 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/.Xil/Vivado-11580-DESKTOP-M6LLH3H/dcp/test_hw.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/.Xil/Vivado-11580-DESKTOP-M6LLH3H/dcp/test_hw.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1989.824 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1989.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Feb 25 08:08:53 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/test_hw/test_hw.runs/impl_1/test_hw.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_project
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v" into library work [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/sources_1/new/test.v:1]
+[Sat Feb 25 08:10:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+startgroup
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs synth_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+save_constraints
+launch_runs impl_1 -jobs 2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1990.316 ; gain = 0.000
+[Sat Feb 25 08:11:28 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/.Xil/Vivado-11580-DESKTOP-M6LLH3H/dcp/test.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/.Xil/Vivado-11580-DESKTOP-M6LLH3H/dcp/test.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1990.316 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1990.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Feb 25 08:12:31 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/runme.log
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/210183698654A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698654A
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property XSDB_USER_BSCAN 2,4 [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+write_de
+ambiguous command name "write_de": write_debug_probes write_device_support_archive
+write_debug_probes probe.ltx
+C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/probe.ltx
+set_property PROBES.FILE probes.ltx [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/Cindy Chong/Desktop/probes.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: C:/Users/Cindy Chong/Desktop/probes.ltx
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+write_debug_probes test.ltx
+C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/test.ltx
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { TYPE == "SIGNAL" } ]
+write_debug_probes filename.tlx
+C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/filename.tlx
+write_debug_probes filename.ltx
+C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/filename.ltx
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Cindy Chong/Desktop/EE361/Lab4.1A/Lab4.1A.runs/impl_1/test.bin} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 25 08:23:35 2017...
